@@ -16,9 +16,9 @@ function App() {
   return (
     <div>
       <Nav/>
-      <BrowserRouter>
+      <BrowserRouter basename="/AttendenceCalculator">
       <Routes>
-        <Route path='/' element={<Navigate to='/home' />} />
+        <Route path='/AttendenceCalculator' element={<Navigate to='/AttendenceCalculator/home' />} />
         <Route path='/home' element={<Home/>} />
         <Route path='/ltps' element={<Ltps/>} />
         <Route path='/expected-percentage' element={<ExpectedPer/>} />
