@@ -18,13 +18,12 @@ function App() {
       <Nav/>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navigate to='/home'/>} />
-        <Route path='/home' element={<Home/>} />
+        <Route path='/' element={<Home/>} />
         <Route path='/ltps' element={<Ltps/>} />
         <Route path='/expected-percentage' element={<ExpectedPer/>} />
         <Route path='/attendence' element={<GeneralAttendence/>} />
         <Route path='/take-a-leave' element={<DecreaseAtt/>} />
-        <Route path='/*' element={<Navigate to='/home'/>} />
+        <Route path='/*' element={<Navigate to='/'/>} />
         </Routes>
       </BrowserRouter>
     </div>
