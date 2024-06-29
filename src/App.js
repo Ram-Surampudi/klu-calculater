@@ -1,13 +1,15 @@
 import React, { lazy } from "react";
 import './Files/css/General.css';
 import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+
 import Home from "./Files/Home";
 import Nav from "./Files/Nav";
+import DecreaseAtt from "./Files/DecreaseAtt";
+import GeneralAttendence from "./Files/GeneralAttendence";
+import Ltps from "./Files/Ltps";
+import ExpectedPer from './Files/ExpectedPer';
 
-const Ltps = lazy(() => import("./Files/Ltps"));
-const ExpectedPer = lazy(() => import("./Files/ExpectedPer"));
-const GeneralAttendence  = lazy(() => import("./Files/GeneralAttendence"));
-const DecreaseAtt  = lazy(() => import("./Files/DecreaseAtt"));
+
 
 function App() {
 
