@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy } from "react";
+import './Files/css/General.css';
+import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import Home from "./Files/Home";
+import Nav from "./Files/Nav";
+
+const Ltps = lazy(() => import("./Files/Ltps"));
+const ExpectedPer = lazy(() => import("./Files/ExpectedPer"));
+const GeneralAttendence  = lazy(() => import("./Files/GeneralAttendence"));
+const DecreaseAtt  = lazy(() => import("./Files/DecreaseAtt"));
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Navigate to='/home'/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/ltps' element={<Ltps/>} />
+        <Route path='/expected-percentage' element={<ExpectedPer/>} />
+        <Route path='/attendence' element={<GeneralAttendence/>} />
+        <Route path='/take-a-leave' element={<DecreaseAtt/>} />
+        <Route path='/*' element={<Navigate to='/home'/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
+
   );
 }
 
