@@ -1,7 +1,6 @@
 import React from "react";
-import './Files/css/General.css';
-import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 
+import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import Home from "./Files/Home";
 import Nav from "./Files/Nav";
 import DecreaseAtt from "./Files/DecreaseAtt";
@@ -16,9 +15,9 @@ function App() {
   return (
     <div>
       <Nav/>
-      <BrowserRouter basename="/AttendenceCalculator">
+      <BrowserRouter>
       <Routes>
-        <Route path='/AttendenceCalculator' element={<Navigate to='/AttendenceCalculator/home' />} />
+        <Route path='/' element={<Navigate to='/home' />} />
         <Route path='/home' element={<Home/>} />
         <Route path='/ltps' element={<Ltps/>} />
         <Route path='/expected-percentage' element={<ExpectedPer/>} />

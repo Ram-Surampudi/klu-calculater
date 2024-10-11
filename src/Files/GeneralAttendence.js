@@ -8,9 +8,9 @@ const GeneralAttendence = () => {
 
   const temp = {totalPeriods :''  , absentPeriods :''};
 
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState(false);
   const [Data, setData] = useState(temp);
-  const [per, setper] = useState(0);
+  const [per, setper] = useState([0]);
 
   const set = e => setData({...Data,[e.target.name] : e.target.value});
 
@@ -22,7 +22,10 @@ const GeneralAttendence = () => {
   }
 
   return (
-<div className='body-div'>
+<div className='div'>
+<div className='lineBreak'>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        </div>
     <h1>General Attendence</h1>
     <form className='form-class' onSubmit={Result}>
         <label for='totalPeriods'>Enter the total conducted periods :</label>

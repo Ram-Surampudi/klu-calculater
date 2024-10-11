@@ -19,7 +19,11 @@ const ExpectedPer = () => {
 }
 
   return (
-    <div className='body-div'>
+    <div className='div'>
+        <div className='lineBreak'>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        </div>
+
     <h1>Expected percentage</h1>
     <form className='form-class' onSubmit={Result}>
         <label>Enter the total conducted periods :</label>

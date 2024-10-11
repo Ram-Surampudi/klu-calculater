@@ -1,5 +1,5 @@
 {
-  "homepage" : "http://ram-surampudi.github.io/AttendenceCalculator",
+  "homepage": "http://ram-surampudi.github.io/AttendenceCalculator",
   "name": "att",
   "version": "0.1.0",
   "private": false,
@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "att": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -16,8 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

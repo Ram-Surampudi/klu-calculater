@@ -1,34 +1,42 @@
 import React from 'react'
+import "./name.css";
 
+const NavBar = () => {
 
-import './css/Nav.css';
+  const navItems = ['home','ltps','expected-percentage', 'attendence' , 'take-a-leave' ];
+      
+      const ButtonHandler = ()=>{
 
-const Nav = () => {
-  
-  const navItems = ['home','ltps','expected-percentage', 'attendence' , 'take-a-leave' ]
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+         //Animate Links
+          navLinks.classList.toggle("open");
+          links.forEach(link => {
+              link.classList.toggle("fade");
+          });
+      
+          //Hamburger Animation
+          hamburger.classList.toggle("toggle");
+};
 
   return (
-    <div>
-          <nav>
-      <div className="nav__bar">
-        <div className="nav__header">
-          <div className="logo nav__logo">
-            <div>C</div>
-            <span>KL<br />UNIVERSITY</span>
-          </div>
-          <div className="nav__menu__btn" id="menu-btn">
-            <i className="ri-menu-line"></i>
-          </div>
-        </div>
-        <ul className="nav__links" id="nav-links">
-            {navItems?.map(item =>(
+    <nav className='myNavBar'>
+    {/* <div class="logo">
+        <img src="logo.svg" alt="Logo Image" />
+    </div> */}
+    <div class="hamburger" onClick={ButtonHandler}>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+          {navItems?.map(item =>(
                 <li  key={item}> <a href= {item}>{item?.toUpperCase()}</a></li>
             ))}
-        </ul>
-      </div>
-    </nav>
-    </div>
+    </ul>
+</nav>
   )
 }
 
-export default Nav;
+export default NavBar

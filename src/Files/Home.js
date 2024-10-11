@@ -1,9 +1,11 @@
 import React from 'react'
-import './css/Home.css';
 
 const Home = () => {
   return (
-    <div className='body-div'>
+    <div className='div'>
+        <div className='lineBreak'>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        </div>
         <h1 className='main'> welcome to klu Attendence Calculator</h1>
         <section className='sub'>
             <p> here the discription about this web page : </p>

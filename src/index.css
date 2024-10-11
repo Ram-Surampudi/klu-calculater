@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+.div{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: larger;
 }
+
+label{
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    margin: 10px;
+
+}
+
+.main {
+    font-size : xx-large;
+    color: rgb(69, 184, 172);
+    text-transform: capitalize;
+}
+
+.hyperlink{
+    color: rgba(69, 184, 172,0.7);
+}
+.hyperlink:hover{
+    color: rgb(69, 184, 172);
+}
+
+.sub{
+    margin: 2%;
+}
+
+.sub0{
+    margin: 10px;
+    opacity: 1;
+}
+
+
+.form-class{
+    display: grid ;
+    grid-template: repeat(1,1fx);
+    margin: 10px;
+}
+
+.form-data{
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    width: 50%;
+    background-color: white;
+    overflow: visible;
+    margin: 0px;
+}
+
+.form-btn{
+    font-family: "Poppins", sans-serif;
+    max-width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    opacity: 1;
+}
+
+
+.save{
+    background-color: rgb(36, 197, 161);
+}
+
+.reset {
+    background-color: rgb(202, 127, 66);
+}
+
+.note{
+    margin-top: 40px;
+}
+
+.note p {
+    color: #e05858;
+}
+
+
+:root {
+  --primary-color: #0f1a2c;
+  --secondary-color: #f6ac0f;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f8fafc;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--text-light);
+  letter-spacing: 2px;
+}
+
+.logo div {
+  padding-inline: 12px;
+  font-size: 2rem;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.lineBreak {
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  .lineBreak {
+    display: block;
+  }
+}
+
