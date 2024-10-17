@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
 
-.div{
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
 h1{
     font-family: "Poppins", sans-serif;
@@ -22,7 +18,7 @@ label{
 .main {
     font-size : xx-large;
     color: rgb(69, 184, 172);
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .hyperlink{
@@ -136,14 +132,4 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-.lineBreak {
-  display: none;
-}
-
-@media screen and (max-width: 800px){
-  .lineBreak {
-    display: block;
-  }
-}
 

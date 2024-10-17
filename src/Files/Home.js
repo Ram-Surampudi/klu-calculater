@@ -3,15 +3,12 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='div'>
-        <div className='lineBreak'>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-        </div>
-        <h1 className='main'> welcome to klu Attendence Calculator</h1>
+        <h1 className='main'> welcome to Attendence Calculator</h1>
         <section className='sub'>
-            <p> here the discription about this web page : </p>
+            <p> Here the discription about this web page : </p>
             <div className='sub0'>
                 <h1><a className='hyperlink' href='/ltps'>LPS</a></h1>
-                <p>In this tab, we calculate the overall percentage of the subject by considering all its components. Please provide the attendance percentage for each component of the subject. If a component is not part of the subject structure, leave that component's input empty. After providing the attendance percentages for all components, press enter, and the tool will calculate the subject's overall percentage.</p>
+                <p>In this tab, we calculate the overall percentage of the subject by considering all its components. Please provide the attendance percentage for each component of the subject. If a component is not part of the subject structure, leave that component's input empty. After providing the attendance percentages for all components, press enter</p>
             </div>
             <div className='sub0'>
                 <h1><a className='hyperlink' href='/expected-percentage'>Expected percentage</a></h1>
@@ -23,8 +20,11 @@ const Home = () => {
             </div>
             <div className='sub0'>
                 <h1><a className='hyperlink' href='/take-a-leave'>take a leave </a> </h1>
-                <p>In this tab, you can calculate how much the attendance percentage will decrease when taking a leave. To do this, provide the total periods conducted up to the current date, the total absences up to the current date, and specify the number of periods you plan to take leave for. The calculation will then determine the resulting attendance percentage after accounting for the leave taken.</p>
+                <p>In this tab, you can calculate how much the attendance percentage will decrease when taking a leave. To do this, provide the total periods conducted up to the current date, the total absences up to the current date, and specify the number of periods you plan to take leave</p>
             </div>
+            <div className='note'>
+                <p>Note : 1 Class = 2 periods</p>
+                </div>
         </section>
     </div>
   )

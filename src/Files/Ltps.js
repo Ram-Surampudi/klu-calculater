@@ -20,9 +20,6 @@ const Ltps = () => {
 
   return (
     <div className='div'>
-        <div className='lineBreak'>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-        </div>
       <h1>LTPS</h1>
         <form className='form-class' onSubmit={Result}>
             <label for='lecture'>Enter the Lecture percentage :</label>

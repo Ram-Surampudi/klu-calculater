@@ -23,9 +23,6 @@ const GeneralAttendence = () => {
 
   return (
 <div className='div'>
-<div className='lineBreak'>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-        </div>
     <h1>General Attendence</h1>
     <form className='form-class' onSubmit={Result}>
         <label for='totalPeriods'>Enter the total conducted periods :</label>
